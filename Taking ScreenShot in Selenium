@@ -1,19 +1,19 @@
 Public class Screenshot{
 
+		System.setProperty("webdriver.chrome.driver",
+				"C://Users//kesava//Downloads//chromedriver_win32//chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
 
-System.setproperty("webdriver chrome.driver", "");
+    driver.get("https://facebook.com");
+    driver.manage().window().maximize();
 
-WebDriver driver=new ChromeDriver();
-driver.get("");
-driver.manage().window().maximize();
+    TakesScreenshot ts= (TakesScreenshot)driver;
 
-TakesScreenshot ts= (TakesScreenshot)driver;
+    File src= ts.getscreehshotas(OutputType.FILE);
 
-File src= ts.getscreehshotas(OutputType.FILE);
+    FileUtils.copyFile(src , new File("./screenshot/fb.jpg"));
 
-FileUtils.copyFile(src , new File("./screenshot/fb.jpg"));
-
-System.out.prinln("Screenshot is taken");
+    System.out.prinln("Screenshot is taken");
 
 
 
