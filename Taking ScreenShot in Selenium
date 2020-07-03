@@ -1,0 +1,22 @@
+Public class Screenshot{
+
+
+System.setproperty("webdriver chrome.driver", "");
+
+WebDriver driver=new ChromeDriver();
+driver.get("");
+driver.manage().window().maximize();
+
+TakesScreenshot ts= (TakesScreenshot)driver;
+
+File src= ts.getscreehshotas(OutputType.FILE);
+
+FileUtils.copyFile(src , new File("./screenshot/fb.jpg"));
+
+System.out.prinln("Screenshot is taken");
+
+
+
+
+
+}
