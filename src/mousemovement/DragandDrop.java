@@ -2,26 +2,31 @@ package mousemovement;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
-public class HandlingMenuSubMenu {
+public class DragandDrop {
 
 	@Test
-	public void menusubmenu() {
-
-		System.setProperty("webdriver.chrome.driver",
+	public void draganddrop() {
+		System.setProperty("Webdriver.chrome.driver",
 				"C://Users//kesava//Downloads//chromedriver_win32//chromedriver.exe");
 
 		WebDriver driver = new ChromeDriver();
-		String url = "http://mrbool.com/how-to-create-menu-with-submenu-using-css-html/26146";
-		driver.get(url);
+		driver.get("");
 		driver.manage().window().maximize();
+
+		WebElement sourceelement = driver.findElement(By.id("draggable"));
+
+		WebElement targetelement = driver.findElement(By.name("droppable"));
+
 		Actions action = new Actions(driver);
-		action.moveToElement(driver.findElement(By.className("menulink"))).build().perform();
-		driver.findElement(By.id("submenu")).click();
+
+		action.clickAndHold(sourceelement).moveToElement(targetelement).release().build().perform();
+
+		driver.close();
 
 	}
-
 }

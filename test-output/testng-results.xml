@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="475" started-at="2020-05-06T04:58:00Z" finished-at="2020-05-06T04:58:01Z">
+  <suite name="Default suite" duration-ms="356" started-at="2020-07-07T15:42:52Z" finished-at="2020-07-07T15:42:53Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="475" started-at="2020-05-06T04:58:00Z" finished-at="2020-05-06T04:58:01Z">
-      <class name="handlingalerts.Handlemultiplewindows">
-        <test-method status="FAIL" signature="handlewindows()[pri:0, instance:handlingalerts.Handlemultiplewindows@2f7a2457]" name="handlewindows" duration-ms="422" started-at="2020-05-06T10:28:00Z" finished-at="2020-05-06T10:28:01Z">
+    <test name="Default test" duration-ms="356" started-at="2020-07-07T15:42:52Z" finished-at="2020-07-07T15:42:53Z">
+      <class name="handlingalerts.HandleFileUploadPopUps">
+        <test-method status="FAIL" signature="fileuploadpopups()[pri:0, instance:handlingalerts.HandleFileUploadPopUps@6108b2d7]" name="fileuploadpopups" duration-ms="317" started-at="2020-07-07T21:12:52Z" finished-at="2020-07-07T21:12:53Z">
           <exception class="java.lang.IllegalStateException">
             <message>
               <![CDATA[The driver executable does not exist: C:\Users\kesava\Downloads\chromedriver_win32\chromedriver.exe]]>
@@ -22,7 +22,7 @@
 	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:290)
 	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
 	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:116)
-	at handlingalerts.Handlemultiplewindows.handlewindows(Handlemultiplewindows.java:18)
+	at handlingalerts.HandleFileUploadPopUps.fileuploadpopups(HandleFileUploadPopUps.java:15)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -52,8 +52,8 @@
           </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- handlewindows -->
-      </class> <!-- handlingalerts.Handlemultiplewindows -->
+        </test-method> <!-- fileuploadpopups -->
+      </class> <!-- handlingalerts.HandleFileUploadPopUps -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -27,7 +27,6 @@ public class Handlemultiplewindows {
 		driver.findElement(By.xpath("//div[@id='post-body-6170641642826198246']//a[1]")).click();
 		Set<String> allwindows = driver.getWindowHandles();
 		int count = allwindows.size();
-		System.out.println("Parent Window Handle Id :" + parent);
 		System.out.println("Total no of windows" + count);
 
 		for (String child : allwindows) {
