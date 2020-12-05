@@ -1,5 +1,7 @@
 package handlingalerts;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -18,7 +20,7 @@ public class AlertPopupHandle {
 		driver.get(url);
 		driver.manage().window().maximize();
 		driver.findElement(By.name("proceed")).click();
-		Thread.sleep(3000);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		Alert alert = driver.switchTo().alert();
 		System.out.println("---------------------------------");
 		System.out.println(alert.getText());

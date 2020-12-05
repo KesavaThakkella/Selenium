@@ -9,6 +9,8 @@ public class ReadProp {
 
 	public static void main(String[] args) throws IOException {
 
+		// properties is a java class
+
 		WebDriver driver;
 
 		Properties prop = new Properties();
@@ -24,6 +26,7 @@ public class ReadProp {
 					"C://Users//kesava//Downloads//Softwares//chromedriver_win32//chromedriver.exe");
 
 			driver = new ChromeDriver();
+			driver.get("");
 
 		} else {
 

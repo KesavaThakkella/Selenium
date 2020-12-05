@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="handlingalerts.HandleFileUploadPopUps">
+      <class name="handlingalerts.AlertPopupHandle">
         <methods>
-          <include name="fileuploadpopups"/>
+          <include name="AlertHandle"/>
         </methods>
-      </class> <!-- handlingalerts.HandleFileUploadPopUps -->
+      </class> <!-- handlingalerts.AlertPopupHandle -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
