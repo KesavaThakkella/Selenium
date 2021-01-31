@@ -10,6 +10,7 @@ public class ReadProp {
 	public static void main(String[] args) throws IOException {
 
 		// properties is a java class
+		// FileInputstream is a java class
 
 		WebDriver driver;
 
