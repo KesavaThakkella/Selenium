@@ -1,0 +1,40 @@
+xpaths following and preceding siblings
+
+youtube link https://www.youtube.com/watch?v=aAWvwGFkySI
+
+1. //ul[@class='hmenu hmenu-visible']//following-sibling::li/child::div[@class='hmenu-item hmenu-title ' and contains(text(),'Trending')]
+
+(or)
+
+//ul[@class='hmenu hmenu-visible']//following-sibling::li/child::div[contains(text(),'Trending')]
+
+2. //ul[@class='hmenu hmenu-visible']//following-sibling::li/child::a[contains(text(),'Bestsellers')]
+
+3. //ul[@class='hmenu hmenu-visible']//following-sibling::li/child::a[contains(text(),'New Releases')]
+
+4. //ul[@class='hmenu hmenu-visible']//following-sibling::li/child::a[contains(text(),'Movers and Shakers')]
+
+---------
+Digital Content and Devices
+
+//li[@class='hmenu-separator']//following-sibling::li/child::div[contains(text(),'Digital Content and Devices')]
+
+------------
+Shop by Category
+
+//li[@class='hmenu-separator']//following-sibling::li/child::div[contains(text(),'Shop by Category')]
+
+//li[@class='hmenu-separator']//following-sibling::li/child::a[@class='hmenu-item']/child::div[contains(text(),'Mobiles, Computers')]
+
+//li[@class='hmenu-separator']//following-sibling::li/child::a[@class='hmenu-item']/child::div[contains(text(),'TV, Appliances, Electronics')]
+------------
+
+Programs & Features
+
+//li[@class='hmenu-separator']//following-sibling::li/child::div[contains(text(),'Programs & Features')]
+
+
+//li[@class='hmenu-separator']//following-sibling::li/child::a[contains(text(),'Amazon Pay')]
+
+//li[@class='hmenu-separator']//following-sibling::li/child::a[@class='hmenu-item']/child::div[contains(text(),'Gift Cards & Mobile Recharges')]
+
